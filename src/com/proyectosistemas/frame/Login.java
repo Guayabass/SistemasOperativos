@@ -131,6 +131,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo6.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
+        Ejemplo6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Ejemplo6.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo6MouseMoved(evt);
@@ -150,6 +151,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo1.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
+        Ejemplo1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Ejemplo1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo1MouseMoved(evt);
@@ -172,6 +174,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo3.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
+        Ejemplo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Ejemplo3.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo3MouseMoved(evt);
@@ -191,6 +194,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo4.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
+        Ejemplo4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Ejemplo4.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo4MouseMoved(evt);
@@ -210,6 +214,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo5.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
+        Ejemplo5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Ejemplo5.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo5MouseMoved(evt);
@@ -223,12 +228,13 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
                 Ejemplo5MouseExited(evt);
             }
         });
-        MenuPanel.add(Ejemplo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 180, 160));
+        MenuPanel.add(Ejemplo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 180, 160));
 
         Ejemplo2.setBackground(new java.awt.Color(255, 255, 255));
         Ejemplo2.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
+        Ejemplo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Ejemplo2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo2MouseMoved(evt);
@@ -242,7 +248,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
                 Ejemplo2MouseExited(evt);
             }
         });
-        MenuPanel.add(Ejemplo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 180, 160));
+        MenuPanel.add(Ejemplo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 180, 160));
 
         jLabel10.setBackground(new java.awt.Color(0, 153, 255));
         jLabel10.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
@@ -287,7 +293,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         TopPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-close-window-32_1.png"))); // NOI18N
-        jLabel21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel21.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel21MouseClicked(evt);
@@ -296,7 +302,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         TopPanel.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 0, -1, 40));
 
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-minimize-window-32.png"))); // NOI18N
-        jLabel22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel22.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel22MouseClicked(evt);
@@ -388,7 +394,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         txtPassword.setText("password123456");
         txtPassword.setToolTipText("");
         txtPassword.setBorder(null);
-        txtPassword.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtPassword.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         txtPassword.setDisabledTextColor(new java.awt.Color(153, 153, 153));
         txtPassword.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -413,7 +419,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-enter-100.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -481,7 +487,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         pnl3.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 300, 50));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-arrow-pointing-left-100.png"))); // NOI18N
-        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel8MouseClicked(evt);
@@ -556,6 +562,12 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
     }//GEN-LAST:event_Ejemplo6MouseExited
 
     private void Ejemplo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo1MouseClicked
+
+        JFrame marco = new MarcoRebote();
+
+        marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        marco.setVisible(true);
 
     }//GEN-LAST:event_Ejemplo1MouseClicked
 
@@ -643,51 +655,27 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
 
     private void Ejemplo1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo1MouseEntered
 
-        if (this.Ejemplo1.isEnabled() == false) {
-            this.Ejemplo1.setToolTipText("Debe ingresar al sistema primero.");
-        } else {
-            this.Ejemplo1.setToolTipText("Añadir Inventario.");
-        }
+
     }//GEN-LAST:event_Ejemplo1MouseEntered
 
     private void Ejemplo2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo2MouseEntered
-        if (this.Ejemplo2.isEnabled() == false) {
-            this.Ejemplo2.setToolTipText("Debe ingresar al sistema primero.");
-        } else {
-            this.Ejemplo2.setToolTipText("Manejar Inventario.");
-        }
+
     }//GEN-LAST:event_Ejemplo2MouseEntered
 
     private void Ejemplo3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo3MouseEntered
-        if (this.Ejemplo3.isEnabled() == false) {
-            this.Ejemplo3.setToolTipText("Debe ingresar al sistema primero.");
-        } else {
-            this.Ejemplo3.setToolTipText("Vender Entradas.");
-        }
+
     }//GEN-LAST:event_Ejemplo3MouseEntered
 
     private void Ejemplo4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo4MouseEntered
-        if (this.Ejemplo4.isEnabled() == false) {
-            this.Ejemplo4.setToolTipText("Debe ingresar al sistema primero.");
-        } else {
-            this.Ejemplo4.setToolTipText("Manejar las entradas.");
-        }
+
     }//GEN-LAST:event_Ejemplo4MouseEntered
 
     private void Ejemplo5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo5MouseEntered
-        if (this.Ejemplo5.isEnabled() == false) {
-            this.Ejemplo5.setToolTipText("Debe ingresar al sistema primero.");
-        } else {
-            this.Ejemplo5.setToolTipText("Añadir Eventos.");
-        }
+
     }//GEN-LAST:event_Ejemplo5MouseEntered
 
     private void Ejemplo6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo6MouseEntered
-        if (this.Ejemplo6.isEnabled() == false) {
-            this.Ejemplo6.setToolTipText("Debe ingresar al sistema primero.");
-        } else {
-            this.Ejemplo6.setToolTipText("Añadir Eventos.");
-        }
+
     }//GEN-LAST:event_Ejemplo6MouseEntered
 
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
@@ -803,7 +791,6 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
     }
 
 
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Ejemplo1;
     private javax.swing.JLabel Ejemplo2;
@@ -846,24 +833,22 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
     // End of variables declaration//GEN-END:variables
 
     public void logear() {
-        
-        
 
         String nombreUsuario = "admin";
 //
         String contrasenna = "12345";
-        
-        if (nombreUsuario.equalsIgnoreCase(txtUserName.getText()) && contrasenna.equalsIgnoreCase(txtPassword.getText())){
-                                jPanelSlider1.nextPanel(20, pnl2, jPanelSlider1.left);
-                    this.Ejemplo1.setEnabled(true);
-                    this.Ejemplo2.setEnabled(true);
-                   this.Ejemplo3.setEnabled(true);
-                    this.Ejemplo4.setEnabled(true);
-                   this.Ejemplo5.setEnabled(true);
-                    this.Ejemplo6.setEnabled(true);
-                    t1.start();
+
+        if (nombreUsuario.equalsIgnoreCase(txtUserName.getText()) && contrasenna.equalsIgnoreCase(txtPassword.getText())) {
+            jPanelSlider1.nextPanel(20, pnl2, jPanelSlider1.left);
+            this.Ejemplo1.setEnabled(true);
+            this.Ejemplo2.setEnabled(true);
+            this.Ejemplo3.setEnabled(true);
+            this.Ejemplo4.setEnabled(true);
+            this.Ejemplo5.setEnabled(true);
+            this.Ejemplo6.setEnabled(true);
+            t1.start();
         } else {
-                          jPanelSlider1.nextPanel(20, pnl3, jPanelSlider1.left); 
+            jPanelSlider1.nextPanel(20, pnl3, jPanelSlider1.left);
         }
 //
 //        Usuario usuarioLogeado = new Usuario();
