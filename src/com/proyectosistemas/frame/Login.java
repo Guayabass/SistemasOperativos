@@ -19,6 +19,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JProgressBar;
 import javax.swing.Timer;
 
 /**
@@ -41,9 +42,24 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
             while (exit == 0) {
                 try {
                     t1.sleep(1200);
-                    jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/loggedin.gif")));
-                    //t2.start();
-                    exit++;
+                    HiloBarra tBarra = new HiloBarra();
+                    tBarra.start();
+                    t2.start();
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Thread.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    });
+
+    Thread t2 = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            int exit = 0;
+            while (exit == 0) {
+                try {
+                    t2.sleep(10000);
+                    jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/frameinitial.png")));
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Thread.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -108,6 +124,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         jLabel1 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
+        loginBar = new javax.swing.JProgressBar();
         pnl3 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -131,7 +148,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo6.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
-        Ejemplo6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Ejemplo6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Ejemplo6.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo6MouseMoved(evt);
@@ -151,7 +168,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo1.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
-        Ejemplo1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Ejemplo1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Ejemplo1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo1MouseMoved(evt);
@@ -174,7 +191,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo3.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
-        Ejemplo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Ejemplo3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Ejemplo3.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo3MouseMoved(evt);
@@ -194,7 +211,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo4.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
-        Ejemplo4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Ejemplo4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Ejemplo4.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo4MouseMoved(evt);
@@ -214,7 +231,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo5.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
-        Ejemplo5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Ejemplo5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Ejemplo5.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo5MouseMoved(evt);
@@ -234,7 +251,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo2.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ejemplo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
-        Ejemplo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Ejemplo2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Ejemplo2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 Ejemplo2MouseMoved(evt);
@@ -450,8 +467,8 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         pnl2.setPreferredSize(new java.awt.Dimension(290, 580));
         pnl2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/frameinitial.png"))); // NOI18N
-        pnl2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 200, 170));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/ResizeSucess.gif"))); // NOI18N
+        pnl2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 210, 150));
 
         jLabel23.setBackground(new java.awt.Color(255, 255, 255));
         jLabel23.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -464,6 +481,14 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         jLabel28.setForeground(new java.awt.Color(0, 153, 204));
         jLabel28.setText("Login exitoso!");
         pnl2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, 130, 50));
+
+        loginBar.setStringPainted(true);
+        loginBar.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                loginBarStateChanged(evt);
+            }
+        });
+        pnl2.add(loginBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 190, -1));
 
         jPanelSlider1.add(pnl2, "card2");
 
@@ -503,6 +528,10 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    public JProgressBar getLoginBar() {
+        return loginBar;
+    }
 
     private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
         this.setState(Login.ICONIFIED);
@@ -646,6 +675,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         this.Ejemplo1.setEnabled(false);
+        this.jLabel1.setVisible(false);
         this.Ejemplo5.setEnabled(false);
         this.Ejemplo2.setEnabled(false);
         this.Ejemplo4.setEnabled(false);
@@ -685,6 +715,10 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
         jPanelSlider1.nextPanel(20, pnl1, jPanelSlider1.right);
     }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void loginBarStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_loginBarStateChanged
+        cargar();
+    }//GEN-LAST:event_loginBarStateChanged
 
     /**
      * @param args the command line arguments
@@ -825,6 +859,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JPanel jpIngreso;
+    public static javax.swing.JProgressBar loginBar;
     private javax.swing.JPanel pnl1;
     private javax.swing.JPanel pnl2;
     private javax.swing.JPanel pnl3;
@@ -885,6 +920,13 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
 //
 //        }
 
+    }
+
+    private void cargar() {
+        if (loginBar.getValue() == 100) {
+            loginBar.setVisible(false);
+            jLabel1.setVisible(true);
+        }
     }
 
 }
