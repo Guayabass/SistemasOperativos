@@ -8,9 +8,9 @@ package com.proyectosistemas.frame;
 import Animacion.Fade;
 import com.proyectosistemas.fonts.Fuente;
 import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import cajaregistradora.Cajero;
+import cajaregistradora.Cliente;
+import carreracaballos.CarreraCaballos;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
@@ -218,6 +218,9 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
             }
         });
         Ejemplo4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Ejemplo4MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Ejemplo4MouseEntered(evt);
             }
@@ -238,6 +241,9 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
             }
         });
         Ejemplo5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Ejemplo5MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Ejemplo5MouseEntered(evt);
             }
@@ -268,37 +274,31 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         MenuPanel.add(Ejemplo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 180, 160));
 
         jLabel10.setBackground(new java.awt.Color(0, 153, 255));
-        jLabel10.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 153, 255));
         jLabel10.setText("Ejemplo #6");
         MenuPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 440, -1, 20));
 
         jLabel16.setBackground(new java.awt.Color(0, 153, 255));
-        jLabel16.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(0, 153, 255));
         jLabel16.setText("Ejemplo #1");
         MenuPanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 190, 100, -1));
 
         jLabel17.setBackground(new java.awt.Color(0, 153, 255));
-        jLabel17.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(0, 153, 255));
         jLabel17.setText("Ejemplo #2");
         MenuPanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, -1, 20));
 
         jLabel18.setBackground(new java.awt.Color(0, 153, 255));
-        jLabel18.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(0, 153, 255));
         jLabel18.setText("Ejemplo #3");
         MenuPanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, -1, 20));
 
         jLabel19.setBackground(new java.awt.Color(0, 153, 255));
-        jLabel19.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(0, 153, 255));
         jLabel19.setText("Ejemplo #4");
         MenuPanel.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, 20));
 
         jLabel20.setBackground(new java.awt.Color(0, 153, 255));
-        jLabel20.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(0, 153, 255));
         jLabel20.setText("Ejemplo #5");
         MenuPanel.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 440, -1, 20));
@@ -412,7 +412,6 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         txtPassword.setToolTipText("");
         txtPassword.setBorder(null);
         txtPassword.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        txtPassword.setDisabledTextColor(new java.awt.Color(153, 153, 153));
         txtPassword.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 txtPasswordMouseClicked(evt);
@@ -720,6 +719,28 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         cargar();
     }//GEN-LAST:event_loginBarStateChanged
 
+    private void Ejemplo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo4MouseClicked
+        try{
+            CarreraCaballos ventana = new CarreraCaballos();
+            ventana.frame.setVisible(true);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_Ejemplo4MouseClicked
+
+    private void Ejemplo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo5MouseClicked
+        Cliente cliente1 = new Cliente("Cliente 1", new int[] { 2, 2, 1, 5, 2, 3 });
+        Cliente cliente2 = new Cliente("Cliente 2", new int[] { 1, 3, 5, 1, 1 });
+
+        // Tiempo inicial de referencia
+        long initialTime = System.currentTimeMillis();
+        Cajero cajera1 = new Cajero("Cajera 1", cliente1, initialTime);
+        Cajero cajera2 = new Cajero("Cajera 2", cliente2, initialTime);
+        
+        cajera1.start();
+        cajera2.start();
+    }//GEN-LAST:event_Ejemplo5MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -885,41 +906,6 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         } else {
             jPanelSlider1.nextPanel(20, pnl3, jPanelSlider1.left);
         }
-//
-//        Usuario usuarioLogeado = new Usuario();
-//
-//        try {
-//            UsuarioLog usuarioLog = new UsuarioLog();
-//
-//            usuarioLogeado = usuarioLog.logear(nombreUsuario, contrasenna);
-//
-//            if (usuarioLogeado != null) {
-//
-//                if (usuarioLogeado.isSuperAdmi()) {
-//
-//                    // rSPanelsSlider1.setPanelSlider(15, pnl2, RSPanelsSlider.DIRECT.LEFT);
-//                    jPanelSlider1.nextPanel(20, pnl2, jPanelSlider1.left);
-//                    this.labelAnnadir.setEnabled(true);
-//                    this.labelAnnadirEventos.setEnabled(true);
-//                    this.labelInventario.setEnabled(true);
-//                    this.labelManejarEntradas.setEnabled(true);
-//                    this.labelManejarEventos.setEnabled(true);
-//                    this.labelVentaEntradas.setEnabled(true);
-//                    t1.start();
-//                }
-//
-//            } else {
-//                //rSPanelsSlider1.setPanelSlider(15, pnl3, RSPanelsSlider.DIRECT.LEFT);
-//                jPanelSlider1.nextPanel(20, pnl3, jPanelSlider1.left);
-//                labelAnnadir.setEnabled(false);
-//            }
-//
-//        } catch (Exception e) {
-//
-//            e.printStackTrace();
-//
-//        }
-
     }
 
     private void cargar() {
@@ -928,5 +914,4 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
             jLabel1.setVisible(true);
         }
     }
-
 }
