@@ -100,7 +100,9 @@ class LaminaPelota extends JPanel {
     public void paintComponent(Graphics g) {
 
         super.paintComponent(g);
-
+        
+        g.setColor(Color.WHITE);
+        
         Graphics2D g2 = (Graphics2D) g;
 
         for (Pelota b : pelotas) {
@@ -155,7 +157,7 @@ class MarcoRebote extends JFrame {
         setTitle("Ejemplo con rebotes");
 
         lamina = new LaminaPelota();
-
+       lamina.setBackground(Color.BLUE);
         add(lamina, BorderLayout.CENTER);
 
         JPanel laminaBotones = new JPanel();

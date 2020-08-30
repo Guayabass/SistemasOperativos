@@ -60,6 +60,11 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
                 try {
                     t2.sleep(10000);
                     jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/frameinitial.png")));
+                    
+                              
+                    t2.sleep(1000);
+                    jLabel1.setVisible(false);
+                    
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Thread.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -91,13 +96,11 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
     private void initComponents() {
 
         MenuPanel = new javax.swing.JPanel();
-        Ejemplo6 = new javax.swing.JLabel();
         Ejemplo1 = new javax.swing.JLabel();
         Ejemplo3 = new javax.swing.JLabel();
         Ejemplo4 = new javax.swing.JLabel();
         Ejemplo5 = new javax.swing.JLabel();
         Ejemplo2 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -144,26 +147,6 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         MenuPanel.setForeground(new java.awt.Color(255, 255, 255));
         MenuPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Ejemplo6.setBackground(new java.awt.Color(255, 255, 255));
-        Ejemplo6.setForeground(new java.awt.Color(255, 255, 255));
-        Ejemplo6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Ejemplo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/icons8-questions-100.png"))); // NOI18N
-        Ejemplo6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        Ejemplo6.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                Ejemplo6MouseMoved(evt);
-            }
-        });
-        Ejemplo6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Ejemplo6MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Ejemplo6MouseExited(evt);
-            }
-        });
-        MenuPanel.add(Ejemplo6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 310, 180, 160));
-
         Ejemplo1.setBackground(new java.awt.Color(255, 255, 255));
         Ejemplo1.setForeground(new java.awt.Color(255, 255, 255));
         Ejemplo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -185,7 +168,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
                 Ejemplo1MouseExited(evt);
             }
         });
-        MenuPanel.add(Ejemplo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 180, 150));
+        MenuPanel.add(Ejemplo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 180, 150));
 
         Ejemplo3.setBackground(new java.awt.Color(255, 255, 255));
         Ejemplo3.setForeground(new java.awt.Color(255, 255, 255));
@@ -205,7 +188,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
                 Ejemplo3MouseExited(evt);
             }
         });
-        MenuPanel.add(Ejemplo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 180, 160));
+        MenuPanel.add(Ejemplo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, 180, 160));
 
         Ejemplo4.setBackground(new java.awt.Color(255, 255, 255));
         Ejemplo4.setForeground(new java.awt.Color(255, 255, 255));
@@ -228,7 +211,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
                 Ejemplo4MouseExited(evt);
             }
         });
-        MenuPanel.add(Ejemplo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 180, 160));
+        MenuPanel.add(Ejemplo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 180, 160));
 
         Ejemplo5.setBackground(new java.awt.Color(255, 255, 255));
         Ejemplo5.setForeground(new java.awt.Color(255, 255, 255));
@@ -251,7 +234,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
                 Ejemplo5MouseExited(evt);
             }
         });
-        MenuPanel.add(Ejemplo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 180, 160));
+        MenuPanel.add(Ejemplo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 180, 150));
 
         Ejemplo2.setBackground(new java.awt.Color(255, 255, 255));
         Ejemplo2.setForeground(new java.awt.Color(255, 255, 255));
@@ -273,15 +256,10 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         });
         MenuPanel.add(Ejemplo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 180, 160));
 
-        jLabel10.setBackground(new java.awt.Color(0, 153, 255));
-        jLabel10.setForeground(new java.awt.Color(0, 153, 255));
-        jLabel10.setText("Ejemplo #6");
-        MenuPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 440, -1, 20));
-
         jLabel16.setBackground(new java.awt.Color(0, 153, 255));
         jLabel16.setForeground(new java.awt.Color(0, 153, 255));
         jLabel16.setText("Ejemplo #1");
-        MenuPanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 190, 100, -1));
+        MenuPanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 100, -1));
 
         jLabel17.setBackground(new java.awt.Color(0, 153, 255));
         jLabel17.setForeground(new java.awt.Color(0, 153, 255));
@@ -291,17 +269,17 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         jLabel18.setBackground(new java.awt.Color(0, 153, 255));
         jLabel18.setForeground(new java.awt.Color(0, 153, 255));
         jLabel18.setText("Ejemplo #3");
-        MenuPanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, -1, 20));
+        MenuPanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 190, -1, 20));
 
         jLabel19.setBackground(new java.awt.Color(0, 153, 255));
         jLabel19.setForeground(new java.awt.Color(0, 153, 255));
         jLabel19.setText("Ejemplo #4");
-        MenuPanel.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, 20));
+        MenuPanel.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 390, -1, 20));
 
         jLabel20.setBackground(new java.awt.Color(0, 153, 255));
         jLabel20.setForeground(new java.awt.Color(0, 153, 255));
         jLabel20.setText("Ejemplo #5");
-        MenuPanel.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 440, -1, 20));
+        MenuPanel.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 390, -1, 20));
 
         getContentPane().add(MenuPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 760, 530));
 
@@ -581,14 +559,6 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         Ejemplo5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
     }//GEN-LAST:event_Ejemplo5MouseExited
 
-    private void Ejemplo6MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo6MouseMoved
-        Ejemplo6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
-    }//GEN-LAST:event_Ejemplo6MouseMoved
-
-    private void Ejemplo6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo6MouseExited
-        Ejemplo6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-    }//GEN-LAST:event_Ejemplo6MouseExited
-
     private void Ejemplo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo1MouseClicked
 
         JFrame marco = new MarcoRebote();
@@ -678,7 +648,6 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         this.Ejemplo5.setEnabled(false);
         this.Ejemplo2.setEnabled(false);
         this.Ejemplo4.setEnabled(false);
-        this.Ejemplo6.setEnabled(false);
         this.Ejemplo3.setEnabled(false);
     }//GEN-LAST:event_formWindowOpened
 
@@ -702,10 +671,6 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
     private void Ejemplo5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo5MouseEntered
 
     }//GEN-LAST:event_Ejemplo5MouseEntered
-
-    private void Ejemplo6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo6MouseEntered
-
-    }//GEN-LAST:event_Ejemplo6MouseEntered
 
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
         // TODO add your handling code here:
@@ -852,12 +817,10 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
     private javax.swing.JLabel Ejemplo3;
     private javax.swing.JLabel Ejemplo4;
     private javax.swing.JLabel Ejemplo5;
-    private javax.swing.JLabel Ejemplo6;
     private javax.swing.JPanel MenuPanel;
     private javax.swing.JPanel TopPanel;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -896,12 +859,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
 
         if (nombreUsuario.equalsIgnoreCase(txtUserName.getText()) && contrasenna.equalsIgnoreCase(txtPassword.getText())) {
             jPanelSlider1.nextPanel(20, pnl2, jPanelSlider1.left);
-            this.Ejemplo1.setEnabled(true);
-            this.Ejemplo2.setEnabled(true);
-            this.Ejemplo3.setEnabled(true);
-            this.Ejemplo4.setEnabled(true);
-            this.Ejemplo5.setEnabled(true);
-            this.Ejemplo6.setEnabled(true);
+            
             t1.start();
         } else {
             jPanelSlider1.nextPanel(20, pnl3, jPanelSlider1.left);
@@ -910,8 +868,14 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
 
     private void cargar() {
         if (loginBar.getValue() == 100) {
+            this.Ejemplo1.setEnabled(true);
+            this.Ejemplo2.setEnabled(true);
+            this.Ejemplo3.setEnabled(true);
+            this.Ejemplo4.setEnabled(true);
+            this.Ejemplo5.setEnabled(true);
             loginBar.setVisible(false);
             jLabel1.setVisible(true);
+            
         }
     }
 }
