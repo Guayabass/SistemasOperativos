@@ -60,11 +60,10 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
                 try {
                     t2.sleep(10000);
                     jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/proyectosistemas/image/frameinitial.png")));
-                    
-                              
+
                     t2.sleep(1000);
                     jLabel1.setVisible(false);
-                    
+
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Thread.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -247,6 +246,9 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
             }
         });
         Ejemplo2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Ejemplo2MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Ejemplo2MouseEntered(evt);
             }
@@ -685,26 +687,38 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
     }//GEN-LAST:event_loginBarStateChanged
 
     private void Ejemplo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo4MouseClicked
-        try{
+        try {
             CarreraCaballos ventana = new CarreraCaballos();
             ventana.frame.setVisible(true);
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }//GEN-LAST:event_Ejemplo4MouseClicked
 
     private void Ejemplo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo5MouseClicked
-        Cliente cliente1 = new Cliente("Cliente 1", new int[] { 2, 2, 1, 5, 2, 3 });
-        Cliente cliente2 = new Cliente("Cliente 2", new int[] { 1, 3, 5, 1, 1 });
+        Cliente cliente1 = new Cliente("Cliente 1", new int[]{2, 2, 1, 5, 2, 3});
+        Cliente cliente2 = new Cliente("Cliente 2", new int[]{1, 3, 5, 1, 1});
 
         // Tiempo inicial de referencia
         long initialTime = System.currentTimeMillis();
         Cajero cajera1 = new Cajero("Cajera 1", cliente1, initialTime);
         Cajero cajera2 = new Cajero("Cajera 2", cliente2, initialTime);
-        
+
         cajera1.start();
         cajera2.start();
     }//GEN-LAST:event_Ejemplo5MouseClicked
+
+    private void Ejemplo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo2MouseClicked
+
+        Cronometro cronometro = new Cronometro();
+
+        cronometro.setLocationRelativeTo(null);
+
+        this.dispose();
+
+        cronometro.setVisible(true);
+
+    }//GEN-LAST:event_Ejemplo2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -859,7 +873,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
 
         if (nombreUsuario.equalsIgnoreCase(txtUserName.getText()) && contrasenna.equalsIgnoreCase(txtPassword.getText())) {
             jPanelSlider1.nextPanel(20, pnl2, jPanelSlider1.left);
-            
+
             t1.start();
         } else {
             jPanelSlider1.nextPanel(20, pnl3, jPanelSlider1.left);
@@ -875,7 +889,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
             this.Ejemplo5.setEnabled(true);
             loginBar.setVisible(false);
             jLabel1.setVisible(true);
-            
+
         }
     }
 }
