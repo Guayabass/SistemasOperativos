@@ -82,12 +82,12 @@ public class CajaRegistradora {
     @Override
     public void run() {
         text.setText("La cajera: " + this.nombre + " está comenzando a procesar la compra de: "+ this.cliente.getNombre() 
-                + " en un tiempo de: "+ (System.currentTimeMillis() - this.TiempoInicial) / 1000 + " seg");
+                + " en: "+ (System.currentTimeMillis() - this.TiempoInicial) / 1000 + " segundos");
         System.out.println(text.getText());
         for (int i = 0; i < this.cliente.getCarroCompra().length; i++) {
             this.esperarXsegundos(cliente.getCarroCompra()[i]); 
-            text2.setText("Cajera: "+ this.nombre +", procesado el producto #" + (i + 1)+ " del cliente: " + this.cliente.getNombre() 
-                    + "->Tiempo: "+(System.currentTimeMillis() - this.TiempoInicial) / 1000 + "segundos");
+            text2.setText("Cajera: "+ this.nombre +", procesado el producto #" + (i + 1)+ " del cliente: " + 
+            this.cliente.getNombre() + "->Tiempo: "+(System.currentTimeMillis() - this.TiempoInicial) / 1000 + "segundos");
             System.out.println(text2.getText());
 		}
         text.setText("La cajera: " + this.nombre + " ya terminó de procesar al cliente: "+ this.cliente.getNombre() 
