@@ -59,7 +59,7 @@ public class CarreraCaballos {
     private void initialize() {
         frame = new JFrame();
         frame.setBounds(100, 100, 598, 430);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.getContentPane().setLayout(null);
         
         h1.setStringPainted(true);
@@ -96,14 +96,8 @@ public class CarreraCaballos {
         JButton btnReset = new JButton("Reset");
         btnReset.setFont(new Font("Tahoma",Font.BOLD,18));
         btnReset.addActionListener(new Reset());
-        btnReset.setBounds(205, 287, 155, 40);
+        btnReset.setBounds(360, 287, 155, 40);
         frame.getContentPane().add(btnReset);
-        
-        JButton btnSalir = new JButton("Salir");
-        btnSalir.setFont(new Font("Tahoma",Font.PLAIN,18));
-        btnSalir.addActionListener(new Salir());
-        btnSalir.setBounds(360, 287, 155, 40);
-        frame.getContentPane().add(btnSalir);
     }
     
     class Carrera implements ActionListener{
@@ -141,12 +135,6 @@ public class CarreraCaballos {
                 H4 h4 = new H4();
                 h4.reset();
             }
-        }
-    }
-    class Salir implements ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent arg0) {
-            System.exit(0);
         }
     }
     

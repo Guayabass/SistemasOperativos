@@ -6,21 +6,16 @@
 package com.proyectosistemas.frame;
 
 import com.proyectosistemas.cronometro.Cronometro;
-import Animacion.Fade;
+import com.proyectosistemas.cajaregistradora.CajaRegistradora;
 import com.proyectosistemas.fonts.Fuente;
 import java.awt.event.KeyEvent;
-import com.proyectosistemas.cajaregistradora.Cajero;
 import com.proyectosistemas.cajaregistradora.Cliente;
 import com.proyectosistemas.carreracaballos.CarreraCaballos;
 import com.proyectosistemas.chat.FrameCliente;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.imageio.ImageIO;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JProgressBar;
 import javax.swing.Timer;
 
@@ -701,14 +696,16 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
     }//GEN-LAST:event_Ejemplo4MouseClicked
 
     private void Ejemplo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo5MouseClicked
-        Cliente cliente1 = new Cliente("Cliente 1", new int[]{2, 2, 1, 5, 2, 3});
-        Cliente cliente2 = new Cliente("Cliente 2", new int[]{1, 3, 5, 1, 1});
+        CajaRegistradora caja = new CajaRegistradora();
+        caja.frame.setVisible(true);
+        Cliente cliente1 = new Cliente("Cliente 1", new int[] { 2, 2, 1, 5, 2, 3 });
+        Cliente cliente2 = new Cliente("Cliente 2", new int[] { 1, 3, 5, 1, 1 });
 
         // Tiempo inicial de referencia
         long initialTime = System.currentTimeMillis();
-        Cajero cajera1 = new Cajero("Cajera 1", cliente1, initialTime);
-        Cajero cajera2 = new Cajero("Cajera 2", cliente2, initialTime);
-
+        CajaRegistradora.Cajero cajera1 = new CajaRegistradora.Cajero("Cajera 1", cliente1, initialTime);
+        CajaRegistradora.Cajero cajera2 = new CajaRegistradora.Cajero("Cajera 2", cliente2, initialTime);
+        
         cajera1.start();
         cajera2.start();
     }//GEN-LAST:event_Ejemplo5MouseClicked
