@@ -5,12 +5,14 @@
  */
 package com.proyectosistemas.frame;
 
+import com.proyectosistemas.cronometro.Cronometro;
 import Animacion.Fade;
 import com.proyectosistemas.fonts.Fuente;
 import java.awt.event.KeyEvent;
-import cajaregistradora.Cajero;
-import cajaregistradora.Cliente;
-import carreracaballos.CarreraCaballos;
+import com.proyectosistemas.cajaregistradora.Cajero;
+import com.proyectosistemas.cajaregistradora.Cliente;
+import com.proyectosistemas.carreracaballos.CarreraCaballos;
+import com.proyectosistemas.chat.FrameCliente;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
@@ -180,6 +182,9 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
             }
         });
         Ejemplo3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Ejemplo3MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Ejemplo3MouseEntered(evt);
             }
@@ -719,6 +724,11 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
         cronometro.setVisible(true);
 
     }//GEN-LAST:event_Ejemplo2MouseClicked
+
+    private void Ejemplo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ejemplo3MouseClicked
+                    FrameCliente cliente = new FrameCliente();
+            cliente.setVisible(true);
+    }//GEN-LAST:event_Ejemplo3MouseClicked
 
     /**
      * @param args the command line arguments

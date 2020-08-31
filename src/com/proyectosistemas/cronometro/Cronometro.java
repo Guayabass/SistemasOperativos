@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.proyectosistemas.frame;
+package com.proyectosistemas.cronometro;
 
+import com.proyectosistemas.cronometro.CronometroDigital;
 import static java.lang.System.exit;
 
 /**
@@ -159,7 +160,7 @@ public class Cronometro extends javax.swing.JFrame {
         );
 
         buttonStart.setText("Iniciar");
-        buttonStart.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        buttonStart.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         buttonStart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 buttonStartMouseClicked(evt);
@@ -172,7 +173,7 @@ public class Cronometro extends javax.swing.JFrame {
         });
 
         buttonStop.setText("Pausa");
-        buttonStop.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        buttonStop.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         buttonStop.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 buttonStopMouseClicked(evt);
@@ -180,7 +181,7 @@ public class Cronometro extends javax.swing.JFrame {
         });
 
         buttonExit.setText("Salir");
-        buttonExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        buttonExit.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         buttonExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 buttonExitMouseClicked(evt);
@@ -188,7 +189,7 @@ public class Cronometro extends javax.swing.JFrame {
         });
 
         buttonPause.setText("Detener");
-        buttonPause.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        buttonPause.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         buttonPause.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 buttonPauseMouseClicked(evt);
