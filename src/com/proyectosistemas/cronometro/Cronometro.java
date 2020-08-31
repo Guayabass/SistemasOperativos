@@ -270,7 +270,7 @@ public class Cronometro extends javax.swing.JFrame {
 
     private void buttonExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonExitMouseClicked
 
-        exit(0);
+        dispose();
 
     }//GEN-LAST:event_buttonExitMouseClicked
 

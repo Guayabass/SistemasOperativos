@@ -178,7 +178,7 @@ class MarcoRebote extends JFrame {
 
             public void actionPerformed(ActionEvent evento) {
 
-                System.exit(0);
+                dispose();
 
             }
 

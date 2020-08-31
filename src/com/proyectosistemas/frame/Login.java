@@ -719,8 +719,6 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
 
         cronometro.setLocationRelativeTo(null);
 
-        this.dispose();
-
         cronometro.setVisible(true);
 
     }//GEN-LAST:event_Ejemplo2MouseClicked
