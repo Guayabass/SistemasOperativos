@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/ProyectoSistemas/src/com/proyectosistemas/chat/HiloServidor.java</file>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/ProyectoSistemas/src/com/proyectosistemas/chat/Servidor.java</file>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/ProyectoSistemas/src/com/proyectosistemas/frame/Login.java</file>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/ProyectoSistemas/src/com/proyectosistemas/cronometro/Cronometro.java</file>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/ProyectoSistemas/src/com/proyectosistemas/chat/HiloCliente.java</file>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/ProyectoSistemas/src/com/proyectosistemas/cronometro/CronometroDigital.java</file>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/ProyectoSistemas/src/com/proyectosistemas/chat/FrameCliente.java</file>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/ProyectoSistemas/src/com/proyectosistemas/frame/Hilos_Java.java</file>
+        </group>
+    </open-files>
 </project-private>

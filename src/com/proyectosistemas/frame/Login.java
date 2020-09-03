@@ -39,11 +39,15 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
             while (exit == 0) {
                 try {
                     t1.sleep(1200);
+                } catch (InterruptedException ex) {
+                    System.out.println(ex.getMessage());
+                }
+                try {
                     HiloBarra tBarra = new HiloBarra();
                     tBarra.start();
                     t2.start();
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(Thread.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (Exception ex2){
+ 
                 }
             }
         }
@@ -62,7 +66,7 @@ public class Login extends javax.swing.JFrame { //hacer un mouseentered en cualq
                     jLabel1.setVisible(false);
 
                 } catch (InterruptedException ex) {
-                    Logger.getLogger(Thread.class.getName()).log(Level.SEVERE, null, ex);
+                    System.out.println("");
                 }
             }
         }

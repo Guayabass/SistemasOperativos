@@ -137,7 +137,7 @@ class PelotaHilos implements Runnable {
 
                 Thread.sleep(4);
             } catch (InterruptedException ex) {
-                Logger.getLogger(PelotaHilos.class.getName()).log(Level.SEVERE, null, ex);
+                System.out.println("");
             }
 
         }
@@ -168,7 +168,7 @@ class MarcoRebote extends JFrame {
                 try {
                     comienza_el_juego();
                 } catch (InterruptedException ex) {
-                    Logger.getLogger(MarcoRebote.class.getName()).log(Level.SEVERE, null, ex);
+                    System.out.println("");
                 }
             }
 
